@@ -28,7 +28,8 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['chinese_search','nbsphinx']
+extensions = ['chinese_search']
+#  extensions = ['chinese_search','nbsphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -37,10 +38,10 @@ templates_path = ['_templates']
 
 
 
-from recommonmark.parser import CommonMarkParser
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#  from recommonmark.parser import CommonMarkParser
+#  source_parsers = {
+    #  '.md': CommonMarkParser,
+#  }
 
 
 source_suffix = ['.rst','.md']
@@ -74,60 +75,60 @@ html_static_path = ['_static']
 htmlhelp_basename = 'Python-Time BLOG'
 
 
-# -- Options for LaTeX output ---------------------------------------------
+#  # -- Options for LaTeX output ---------------------------------------------
 
-# 注：在生成html的时候这句话要注释
-# latex_engine = 'xelatex'
+#  # 注：在生成html的时候这句话要注释
+#  # latex_engine = 'xelatex'
 
-latex_elements={# The paper size ('letterpaper' or 'a4paper').
-'papersize':'a4paper',# The font size ('10pt', '11pt' or '12pt').
-'pointsize':'12pt','classoptions':',oneside','babel':'',#必须
-'inputenc':'',#必须
-'utf8extra':'',#必须
-# Additional stuff for the LaTeX preamble.
-'preamble': r"""
-\usepackage{xeCJK}
-\usepackage{indentfirst}
-\setlength{\parindent}{2em}
-\setCJKmainfont{WenQuanYi Micro Hei}
-\setCJKmonofont[Scale=0.9]{WenQuanYi Micro Hei Mono}
-\setCJKfamilyfont{song}{WenQuanYi Micro Hei}
-\setCJKfamilyfont{sf}{WenQuanYi Micro Hei}
-\XeTeXlinebreaklocale "zh"
-\XeTeXlinebreakskip = 0pt plus 1pt
-"""}
+#  latex_elements={# The paper size ('letterpaper' or 'a4paper').
+#  'papersize':'a4paper',# The font size ('10pt', '11pt' or '12pt').
+#  'pointsize':'12pt','classoptions':',oneside','babel':'',#必须
+#  'inputenc':'',#必须
+#  'utf8extra':'',#必须
+#  # Additional stuff for the LaTeX preamble.
+#  'preamble': r"""
+#  \usepackage{xeCJK}
+#  \usepackage{indentfirst}
+#  \setlength{\parindent}{2em}
+#  \setCJKmainfont{WenQuanYi Micro Hei}
+#  \setCJKmonofont[Scale=0.9]{WenQuanYi Micro Hei Mono}
+#  \setCJKfamilyfont{song}{WenQuanYi Micro Hei}
+#  \setCJKfamilyfont{sf}{WenQuanYi Micro Hei}
+#  \XeTeXlinebreaklocale "zh"
+#  \XeTeXlinebreakskip = 0pt plus 1pt
+#  """}
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-  ('index', 'python3-cookbook.tex', u'《Python编程时光》',
-   u'小明同学', 'howto'),
-]
+#  # Grouping the document tree into LaTeX files. List of tuples
+#  # (source start file, target name, title,
+#  #  author, documentclass [howto, manual, or own class]).
+#  latex_documents = [
+  #  ('index', 'python3-cookbook.tex', u'《Python编程时光》',
+   #  u'小明同学', 'howto'),
+#  ]
 
-# -- Options for manual page output ---------------------------------------
+#  # -- Options for manual page output ---------------------------------------
 
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'python3-cookbook', u'《Python编程时光》',
-     [u'小明同学'], 1)
-]
+#  # One entry per manual page. List of tuples
+#  # (source start file, name, description, authors, manual section).
+#  man_pages = [
+    #  ('index', 'python3-cookbook', u'《Python编程时光》',
+     #  [u'小明同学'], 1)
+#  ]
 
-# If true, show URL addresses after external links.
-#man_show_urls = False
+#  # If true, show URL addresses after external links.
+#  #man_show_urls = False
 
 
-# -- Options for Texinfo output -------------------------------------------
+#  # -- Options for Texinfo output -------------------------------------------
 
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-  ('index', 'Python-Time', u'《Python编程时光》',
-   u'小明同学', 'Python-Time', '《Python编程时光》',
-   'Miscellaneous'),
-]
+#  # Grouping the document tree into Texinfo files. List of tuples
+#  # (source start file, target name, title, author,
+#  #  dir menu entry, description, category)
+#  texinfo_documents = [
+  #  ('index', 'Python-Time', u'《Python编程时光》',
+   #  u'小明同学', 'Python-Time', '《Python编程时光》',
+   #  'Miscellaneous'),
+#  ]
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
