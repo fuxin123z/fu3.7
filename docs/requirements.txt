@@ -1,6 +1,0 @@
-
-
-
-jupyter_client
-nbsphinx
-numpydoc
