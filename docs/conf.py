@@ -59,6 +59,7 @@ exclude_patterns = []
 #  html_theme = 'alabaster'
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
+#  html_theme = 'pypa_theme'
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
