@@ -5,3 +5,4 @@ build/
 *.pyc
 source/.DS_Store
 .DS_Store
+docs/_build/html/class/01_class.html
