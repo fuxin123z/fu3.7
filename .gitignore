@@ -1,4 +1,7 @@
+docs/_build/
+
 build/
 .idea/
 *.pyc
 source/.DS_Store
+.DS_Store
